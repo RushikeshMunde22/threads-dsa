@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html.dark {
+  --threads-bg: #0a0a0a;
+  --threads-surface: #181818;
+  --threads-elevated: #212121;
+  --threads-border: #262626;
+  --threads-text: #f3f5f7;
+  --threads-muted: #777777;
+  --threads-hover: rgba(255, 255, 255, 0.05);
+  color-scheme: dark;
+}
+
+html.light {
+  --threads-bg: #fafafa;
+  --threads-surface: #ffffff;
+  --threads-elevated: #f5f5f5;
+  --threads-border: #e5e5e5;
+  --threads-text: #0a0a0a;
+  --threads-muted: #737373;
+  --threads-hover: rgba(0, 0, 0, 0.04);
+  color-scheme: light;
+}
+
+html,
+body {
+  background-color: var(--threads-bg);
+  color: var(--threads-text);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle scrollbars matching threads.net */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--threads-border);
+  border-radius: 9999px;
+}

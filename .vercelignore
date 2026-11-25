@@ -1,0 +1,13 @@
+.git
+node_modules
+.next
+.vercel
+.env.local
+cpp-engine
+scripts
+*.png
+*.jpg
+*.jpeg
+*.tsbuildinfo
+*.exe
+tmp
